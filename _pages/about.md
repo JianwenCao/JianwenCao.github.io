@@ -26,7 +26,7 @@ Currently, I am a student researcher at:
 * [**Computer Vision and Geometry Group (ETHZ CVG)**](https://cvg.ethz.ch/), working on Real-time Visual-Inertial-LiDAR Gaussian Splatting SLAM.
 * [**Robotics and Perception Group (UZH RPG)**](https://rpg.ifi.uzh.ch/), focusing on Event Camera-Enhanced Robot Motor Control Policies.
 
-I have a experience in:
+I have experiences in:
 * **Robotics & RL**: Deep experience in RL/IL training and deployment on robot arms and drones.
 * **3D Vision & SLAM**: Expertise in Gaussian Splatting (3DGS), Visual Odometry, and SLAM pipelines.
 * **Foundation Models**: Familiarity with VLA models, LLMs, and multimodal pre-training.
