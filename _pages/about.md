@@ -42,7 +42,7 @@ Feel free to reach out to me at [jianwen.cao@uzh.ch](mailto:jianwen.cao@uzh.ch).
 # Publications
 ***
 * **[Accepted]** **Jianwen Cao**, et al. [**Generative Event Pretraining with Foundation Model Alignment.**](https://arxiv.org/abs/2603.23032) *CVPR 2026.*
-* **[Under Review]** ..., **Jianwen Cao**, et al. [**Memory Over Maps: 3D Object Localization Without Reconstruction.**](https://ruizhou-cn.github.io/memory-over-maps/) *IROS 2026.*
+* **[Under Review]** ..., **Jianwen Cao**, et al. [**Memory Over Maps: 3D Object Localization Without Reconstruction.**](https://ruizhou-cn.github.io/memory-over-maps/)
 * **[Published]** **Jianwen Cao**, et al. [**Fuse Tune: Hierarchical Decoder Towards Efficient Transfer Learning.**](https://link.springer.com/chapter/10.1007/978-981-99-8540-1_17) *PRCV 2023.*
 
 </div>
