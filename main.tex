@@ -1,0 +1,169 @@
+% !TeX program = pdflatex
+\documentclass[a4paper,10pt]{article} 
+% Packages
+\usepackage[top=0.25in, bottom=0.25in, left=0.3in, right=0.3in]{geometry} 
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{times} % Times New Roman font
+\linespread{1.05}
+
+% Formatting hyper-links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Jianwen Cao - Resume},
+}
+
+% Formatting sections
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+
+% Formatting lists
+\setlist[itemize]{leftmargin=*, itemsep=0pt, parsep=0pt, topsep=0pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{0pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-1pt} 
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-1pt}
+}
+
+\begin{document}
+
+%-------------------------------------------
+% HEADER
+%-------------------------------------------
+\begin{center}
+    {\Huge \textbf{Jianwen Cao}} \\ \vspace{0pt}
+    Zurich, Switzerland \\ \vspace{0pt}
+    \href{mailto:jianwen.cao@uzh.ch}{jianwen.cao@uzh.ch} $|$ 
+    \href{mailto:caojia@student.ethz.ch}{caojia@student.ethz.ch} $|$ 
+    +41 766395217 $|$ +86 18094203447
+\end{center}
+
+
+%-------------------------------------------
+% EDUCATION
+%-------------------------------------------
+\section{Education}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeSubheading
+      {University of Zurich (UZH)}{Zurich, Switzerland}
+      {M.Sc. in Informatics (Major: Artificial Intelligence, Minor: Data Science), GPA: 5.57/6}{2024 -- Present}
+      \item \small{\textbf{Core Courses:} Data Science (\textbf{6.0}/6.0), Machine Learning for Natural Language Processing (\textbf{6.0}/6.0), Vision Algorithms for Mobile Robotics (\textbf{5.5}/6.0), ETHZ 3D Vision (\textbf{5.75}/6.0), ETHZ Virtual Reality (\textbf{6.0}/6.0).}
+    
+    \resumeSubheading
+      {Nanjing University of Information Science and Technology (NUIST)}{Nanjing, China}
+      {B.Eng. in Artificial Intelligence, GPA: 87.6/100}{2020 -- 2024}
+  \end{itemize}
+
+
+%-------------------------------------------
+% PUBLICATIONS
+%-------------------------------------------
+\section{Publications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{
+      \textbf{[Accepted] First Author}: \href{https://arxiv.org/abs/2603.23032}{\textbf{``Generative Event Pretraining with Foundation Model Alignment.''}} \textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2026.} \\
+      \textit{Proposed a multimodal pre-training method combining images and event cameras, achieving SOTA performance.}
+    }
+    
+    \item \small{
+      \textbf{[Under Review] Second Author}: \href{https://ruizhou-cn.github.io/memory-over-maps/}{\textbf{``Memory Over Maps: 3D Object Localization Without Reconstruction.''}} \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (\textbf{IROS}), 2026.} \\
+      \textit{Responsible for 3D object localization (query input, 3D position output) and efficiency analysis. Ultimately deployed on the Boston Dynamics Spot robot dog.}
+    }
+
+    \item \small{
+      \textbf{[Published] First Author}: \href{https://link.springer.com/chapter/10.1007/978-981-99-8540-1_17}{\textbf{``Fuse Tune: Hierarchical Decoder Towards Efficient Transfer Learning.''}} \textit{Pattern Recognition and Computer Vision (\textbf{PRCV}), 2023.} \\
+      \textit{Proposed an efficient transfer learning method that eliminates the need for backbone network backpropagation.}
+    }
+  \end{itemize}
+
+
+
+%-------------------------------------------
+% PROJECTS & AWARDS
+%-------------------------------------------
+\section{Projects \& Awards}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeProjectHeading
+      {\textbf{Robotics and Reinforcement Learning}}{}
+      \begin{itemize}
+        \resumeItem{Complete vision-based racing drone RL training and real-world deployment experience (\href{https://github.com/uzh-rpg/VBDF-2025-Team4}{GitHub}) (\href{https://www.youtube.com/watch?v=H1y3LKRlMYc}{YouTube}).}
+        \resumeItem{Teleoperated the Inspire dexterous hand in Isaac Sim by synchronizing human hand movements from first-person view videos (\href{https://github.com/JianwenCao/TeleOptHand}{GitHub}).}
+        \resumeItem{Familiar with forward/inverse kinematics, coordinate transformations, spline sampling, PID control, RL, IL, and Diffusion Policy.}
+        \resumeItem{Implemented RL algorithms (DQN, PPO) and trained agents on Gymnasium (Atari games).}
+        \resumeItem{Implemented IL algorithms (BC, Q-chunking, DAgger) and deployed them on Soarm101 for block grasping and placing with obstacle avoidance.}
+        \resumeItem{Deep understanding of RL algorithm principles including DQN, Policy Gradient, TRPO, PPO, and SAC.}
+      \end{itemize}
+      
+    \resumeProjectHeading
+      {\textbf{SLAM and 3D Gaussian Splatting (3DGS)}}{}
+      \begin{itemize}
+        \resumeItem{Re-implemented Visual Odometry (VO) on the KITTI dataset based on the core concepts of PTAM/FAST-LIVO2.}
+        \resumeItem{Successfully reproduced the original 3DGS paper, improved HI-SLAM2, and established a complete Novel View Synthesis pipeline.}
+      \end{itemize}
+
+    \resumeProjectHeading
+      {\textbf{Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM)}}{2022}
+      \begin{itemize}
+        \resumeItem{Responsible for designing robust mathematical models and optimization algorithms. Awarded Second Prize at the National Level.}
+      \end{itemize}
+  \end{itemize}
+  
+%-------------------------------------------
+% RESEARCH & INTERNSHIP EXPERIENCE
+%-------------------------------------------
+\section{Research \& Internship Experience}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    
+    \resumeSubheading
+      {\href{https://cvg.ethz.ch/}{Computer Vision and Geometry Group (ETHZ CVG)}}{Zurich, Switzerland}
+      {Student Researcher $|$ Real-time Visual-Inertial-LiDAR Gaussian Splatting SLAM}{Mar 2025 -- Feb 2026}
+      \item \small{Reproduced and improved GS-LIVO to achieve better geometric accuracy and mapping efficiency, reaching SOTA performance.}
+
+    \resumeSubheading
+      {\href{https://rpg.ifi.uzh.ch/}{Robotics and Perception Group (UZH RPG)}}{Zurich, Switzerland}
+      {Student Researcher $|$ Event Camera-Enhanced Robot Motor Control Policies}{Feb 2025 -- Jan 2026}
+      \item \small{Conducted autoregressive pre-training on multimodal data, significantly improving the performance and robustness of downstream vision and control tasks.}
+
+    \resumeSubheading
+      {\href{https://www.intsig.com/en/}{IntSig Information Co., Ltd. (IntSig)}}{Shanghai, China}
+      {Computer Vision Algorithm Intern}{Jul 2023 -- Oct 2023}
+      \item \small{Developed object detection algorithms based on improved DETR series architectures.}
+
+  \end{itemize}
+
+
+%-------------------------------------------
+% TECHNICAL SKILLS
+%-------------------------------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{
+     \textbf{Robot Arm \& Dog Deployment}: Complete MuJoCo IL/RL training and ROS2 deployment experience on Soarm101, including data collection and state space optimization. \\
+     \textbf{VLA Models}: Familiar with RT-1, RT-2, Pi0, GR00T, ACT, and other Vision-Language-Action models. \\
+     \textbf{Object Detection \& Segmentation}: RCNN series (Fast, Faster, Mask, Cascade), DETR, GLIP, GLIP2, SAM. \\
+     \textbf{Pre-training \& Contrastive Learning}: Masked Modeling (BERT, MAE, BEiT, EVA), MoCo, CLIP, DINO. \\
+     \textbf{LLMs \& Multimodal Models}: Familiar with GPT, MoE, RoPE, RAG, Engram; experience in pre-training Chinese corpora at the GPT-2 scale and RLHF post-training. \\
+     \textbf{Generative Models}: GAN, VAE, VQ-VAE, VQGAN, Latent Diffusion Models. \\
+     \textbf{SLAM \& 3D Vision}: PTAM, FAST-LIVO2, 3DGS, HI-SLAM2, GS-LIVO. \\
+    }
+ \end{itemize}
+
+\end{document}

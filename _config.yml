@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Jianwen Cao"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Jianwen Cao"
 description              : &description "Jianwen Cao's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -23,7 +23,7 @@ repository               : "JianwenCao/JianwenCao.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "bio-photo.jpg"
+  avatar           : "bio-photo.png"
   name             : "Jianwen Cao"
   pronouns         : # example: "she/her"  
   bio              : "M.Sc. Student in Informatics (AI) at UZH. Interested in CV, Robotics, and Multimodal Models."
